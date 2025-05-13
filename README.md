@@ -1,24 +1,31 @@
-# react-native-shimmer-skeleton
+# react-native-fast-shimmer
 
 Shimmer skeleton for loading placeholders
 
 ## Installation
 
 ```sh
-npm install react-native-shimmer-skeleton
+npm install react-native-fast-shimmer
 ```
 
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-shimmer-skeleton';
+import { Shimmer, ShimmerProvider } from 'react-native-fast-shimmer';
 
-// ...
-
-const result = await multiply(3, 7);
+export default function App() {
+  return (
+    <ShimmerProvider duration={1000}>
+      <View>
+        <Shimmer style={styles.shimmerMain} />
+      </View>
+      <View>
+        <Shimmer style={styles.shimmerMain} />
+      </View>
+    </ShimmerProvider>
+  );
+}
 ```
-
 
 ## Contributing
 

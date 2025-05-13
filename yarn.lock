@@ -12115,6 +12115,63 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-fast-shimmer-example@workspace:example":
+  version: 0.0.0-use.local
+  resolution: "react-native-fast-shimmer-example@workspace:example"
+  dependencies:
+    "@babel/core": ^7.20.0
+    "@expo/metro-runtime": ~4.0.1
+    expo: ~52.0.46
+    expo-linear-gradient: ^14.1.4
+    expo-status-bar: ~2.0.1
+    react: 18.3.1
+    react-dom: 18.3.1
+    react-native: 0.76.9
+    react-native-builder-bob: ^0.40.6
+    react-native-linear-gradient: ^2.8.3
+    react-native-reanimated: ~3.16.1
+    react-native-svg: ^15.12.0
+    react-native-web: ~0.19.13
+  languageName: unknown
+  linkType: soft
+
+"react-native-fast-shimmer@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "react-native-fast-shimmer@workspace:."
+  dependencies:
+    "@commitlint/config-conventional": ^19.6.0
+    "@eslint/compat": ^1.2.7
+    "@eslint/eslintrc": ^3.3.0
+    "@eslint/js": ^9.22.0
+    "@evilmartians/lefthook": ^1.5.0
+    "@react-native/eslint-config": ^0.78.0
+    "@release-it/conventional-changelog": ^9.0.2
+    "@types/jest": ^29.5.5
+    "@types/react": ^19.0.12
+    babel-plugin-react-compiler: rc
+    commitlint: ^19.6.1
+    del-cli: ^5.1.0
+    eslint: ^9.22.0
+    eslint-config-prettier: ^10.1.1
+    eslint-plugin-prettier: ^5.2.3
+    eslint-plugin-react-hooks: ^6.0.0-rc.1
+    jest: ^29.7.0
+    prettier: ^3.0.3
+    react: 18.3.1
+    react-native: 0.76.9
+    react-native-builder-bob: ^0.40.6
+    react-native-reanimated: ^3.17.5
+    react-native-svg: ^15.12.0
+    release-it: ^17.10.0
+    typescript: ^5.2.2
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-reanimated: ^3.17.5
+    react-native-svg: ^15.12.0
+  languageName: unknown
+  linkType: soft
+
 "react-native-is-edge-to-edge@npm:1.1.7":
   version: 1.1.7
   resolution: "react-native-is-edge-to-edge@npm:1.1.7"
@@ -12191,63 +12248,6 @@ __metadata:
   checksum: 108095709cd7a3effc5b5d276d94e161b399bd2d06e32140834168a0051545401bb09228071447e5925571da3f86f335d2a82c76751cdae07f66faf50b25c97f
   languageName: node
   linkType: hard
-
-"react-native-shimmer-skeleton-example@workspace:example":
-  version: 0.0.0-use.local
-  resolution: "react-native-shimmer-skeleton-example@workspace:example"
-  dependencies:
-    "@babel/core": ^7.20.0
-    "@expo/metro-runtime": ~4.0.1
-    expo: ~52.0.46
-    expo-linear-gradient: ^14.1.4
-    expo-status-bar: ~2.0.1
-    react: 18.3.1
-    react-dom: 18.3.1
-    react-native: 0.76.9
-    react-native-builder-bob: ^0.40.6
-    react-native-linear-gradient: ^2.8.3
-    react-native-reanimated: ~3.16.1
-    react-native-svg: ^15.12.0
-    react-native-web: ~0.19.13
-  languageName: unknown
-  linkType: soft
-
-"react-native-shimmer-skeleton@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "react-native-shimmer-skeleton@workspace:."
-  dependencies:
-    "@commitlint/config-conventional": ^19.6.0
-    "@eslint/compat": ^1.2.7
-    "@eslint/eslintrc": ^3.3.0
-    "@eslint/js": ^9.22.0
-    "@evilmartians/lefthook": ^1.5.0
-    "@react-native/eslint-config": ^0.78.0
-    "@release-it/conventional-changelog": ^9.0.2
-    "@types/jest": ^29.5.5
-    "@types/react": ^19.0.12
-    babel-plugin-react-compiler: rc
-    commitlint: ^19.6.1
-    del-cli: ^5.1.0
-    eslint: ^9.22.0
-    eslint-config-prettier: ^10.1.1
-    eslint-plugin-prettier: ^5.2.3
-    eslint-plugin-react-hooks: ^6.0.0-rc.1
-    jest: ^29.7.0
-    prettier: ^3.0.3
-    react: 18.3.1
-    react-native: 0.76.9
-    react-native-builder-bob: ^0.40.6
-    react-native-reanimated: ^3.17.5
-    react-native-svg: ^15.12.0
-    release-it: ^17.10.0
-    typescript: ^5.2.2
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-    react-native-reanimated: ^3.17.5
-    react-native-svg: ^15.12.0
-  languageName: unknown
-  linkType: soft
 
 "react-native-svg@npm:^15.12.0":
   version: 15.12.0

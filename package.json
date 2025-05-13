@@ -1,7 +1,7 @@
 {
-  "name": "react-native-shimmer-skeleton",
-  "version": "0.1.0",
-  "description": "Shimmer skeleton for loading placeholders",
+  "name": "react-native-fast-shimmer",
+  "version": "1.0.0",
+  "description": "React Native Shimmer for loading placeholders",
   "source": "./src/index.tsx",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -32,7 +32,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-shimmer-skeleton-example",
+    "example": "yarn workspace react-native-fast-shimmer-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",

@@ -1,4 +1,4 @@
-import { Shimmer, ShimmerProvider } from 'react-native-shimmer-skeleton';
+import { Shimmer, ShimmerProvider } from 'react-native-fast-shimmer';
 import { View, StyleSheet, SafeAreaView } from 'react-native';
 
 export default function App() {
