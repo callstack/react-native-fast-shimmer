@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Q1w1N/react-native-shimmer-skeleton.git"
+    "url": "git+https://github.com/callstack/react-native-fast-shimmer.git"
   },
   "author": "Q1w1N <kewin.wereszczynski@gmail.com> (https://github.com/Q1w1N)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Q1w1N/react-native-shimmer-skeleton/issues"
+    "url": "https://github.com/callstack/react-native-fast-shimmer/issues"
   },
-  "homepage": "https://github.com/Q1w1N/react-native-shimmer-skeleton#readme",
+  "homepage": "https://github.com/callstack/react-native-fast-shimmer#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

@@ -1,8 +1,4 @@
-# react-native-fast-shimmer
-
-Shimmer skeleton for loading placeholders
-
-## Installation
+## Getting Started
 
 ```sh
 npm install react-native-fast-shimmer
@@ -38,3 +34,7 @@ MIT
 ---
 
 Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+
+## Made with ❤️ at Callstack
+
+react-native-fast-shimmer is an open source project and will always remain free to use. If you think it's cool, please star it 🌟. [Callstack][callstack-readme-with-love] is a group of React and React Native geeks, contact us at [hello@callstack.com](mailto:hello@callstack.com) if you need any help with these or just want to say hi!
