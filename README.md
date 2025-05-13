@@ -23,6 +23,17 @@ export default function App() {
 }
 ```
 
+## Props
+
+#### `Shimmer` Component
+
+| Prop              | Type                               | Default                                      | Description                                        |
+|-------------------|------------------------------------|----------------------------------------------|----------------------------------------------------|
+| `style`           | `ViewStyle` or `ViewStyle[]`       | `undefined`                                  | Custom styles for the Shimmer container.           |
+| `linearGradients` | `string[]`                         | `['transparent', '#FFFFFF30', 'transparent']` | Array of colors for the linear gradient animation. |
+| `gradientStart`   | `{ x: number; y: number }`         | `{ x: 0, y: 0.5 }`                           | Start coordinates for the linear gradient.         |
+| `gradientEnd`     | `{ x: number; y: number }`         | `{ x: 1, y: 0.5 }`                           | End coordinates for the linear gradient.           |
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
