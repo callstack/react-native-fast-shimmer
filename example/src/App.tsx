@@ -1,13 +1,21 @@
-import { multiply } from 'react-native-shimmer-skeleton';
-import { Text, View, StyleSheet } from 'react-native';
-
-const result = multiply(3, 7);
+import { Shimmer, ShimmerProvider } from 'react-native-shimmer-skeleton';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ShimmerProvider duration={1000}>
+        <View style={styles.shimmer1}>
+          <Shimmer style={styles.shimmerMain} />
+        </View>
+        <View style={styles.shimmer2}>
+          <Shimmer style={styles.shimmerMain} />
+        </View>
+        <View style={styles.shimmer3}>
+          <Shimmer style={styles.shimmerMain} />
+        </View>
+      </ShimmerProvider>
+    </SafeAreaView>
   );
 }
 
@@ -15,6 +23,28 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
+    gap: 12,
+  },
+  shimmer1: {
+    width: 200,
+    height: 50,
+    borderRadius: 10,
+    backgroundColor: 'gray',
+  },
+  shimmer2: {
+    width: 200,
+    height: 50,
+    borderRadius: 10,
+    backgroundColor: 'gray',
+  },
+  shimmer3: {
+    width: 200,
+    height: 50,
+    borderRadius: 10,
+    backgroundColor: 'gray',
+  },
+  shimmerMain: {
+    borderRadius: 10,
   },
 });

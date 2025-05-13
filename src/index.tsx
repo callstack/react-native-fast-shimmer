@@ -1,3 +1,2 @@
-export function multiply(a: number, b: number): number {
-  return a * b;
-}
+export { Shimmer } from './Shimmer';
+export { ShimmerProvider } from './ShimmerContext';
