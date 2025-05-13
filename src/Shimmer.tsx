@@ -56,10 +56,5 @@ const styles = StyleSheet.create({
     height: '100%',
     width: '100%',
   },
-  gradientWrapper: {
-    overflow: 'hidden',
-    position: 'relative',
-    width: 100,
-    height: 100,
-  },
+  gradientWrapper: StyleSheet.absoluteFillObject,
 });
