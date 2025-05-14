@@ -4,11 +4,23 @@ import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 import { ShimmerContext } from './ShimmerContext';
 import { MyLinearGradient } from './LinearGradient';
 
+const DEFAULT_LINEAR_GRADIENTS = ['transparent', '#FFFFFF30', 'transparent'];
+const DEFAULT_GRADIENT_START = { x: 0, y: 0.5 };
+const DEFAULT_GRADIENT_END = { x: 1, y: 0.5 };
+
 interface Props {
   style?: ViewStyle | ViewStyle[];
+  linearGradients?: string[];
+  gradientStart?: { x: number; y: number };
+  gradientEnd?: { x: number; y: number };
 }
 
-export const Shimmer: React.FC<Props> = ({ style }) => {
+export const Shimmer = ({
+  style,
+  linearGradients = DEFAULT_LINEAR_GRADIENTS,
+  gradientStart = DEFAULT_GRADIENT_START,
+  gradientEnd = DEFAULT_GRADIENT_END,
+}: Props): React.ReactNode => {
   const shimmer = useContext(ShimmerContext);
   const shimmerRef = React.useRef<View>(null);
   const [offset, setOffset] = useState(0);
@@ -39,9 +51,9 @@ export const Shimmer: React.FC<Props> = ({ style }) => {
     <View ref={shimmerRef} onLayout={measure} style={[styles.container, style]}>
       <Animated.View style={[gradientStyle, styles.gradientWrapper]}>
         <MyLinearGradient
-          colors={['transparent', '#FFFFFF30', 'transparent']}
-          start={{ x: 0, y: 0.5 }}
-          end={{ x: 1, y: 0.5 }}
+          colors={linearGradients}
+          start={gradientStart}
+          end={gradientEnd}
           style={StyleSheet.absoluteFill}
         />
       </Animated.View>
