@@ -1,11 +1,15 @@
 import React from 'react';
 import Svg, { Defs, LinearGradient, Stop, Rect } from 'react-native-svg';
 import type { ViewStyle, StyleProp } from 'react-native';
+import { extractOpacityFromColor } from './helpers';
 
-interface Props {
+export interface GradientConfig {
   colors: string[];
   start?: { x: number; y: number };
   end?: { x: number; y: number };
+}
+
+interface Props extends GradientConfig {
   style?: StyleProp<ViewStyle>;
   children?: React.ReactNode;
 }
@@ -16,7 +20,7 @@ export const MyLinearGradient = ({
   end = { x: 0, y: 1 },
   style,
 }: Props) => {
-  const gradientId = 'grad';
+  const gradientId = colors.join('-');
 
   return (
     <Svg style={style}>
@@ -33,7 +37,7 @@ export const MyLinearGradient = ({
               key={i}
               offset={`${(i / (colors.length - 1)) * 100}%`}
               stopColor={color === 'transparent' ? 'white' : color}
-              stopOpacity={color === 'transparent' ? 0 : 1}
+              stopOpacity={extractOpacityFromColor(color)}
             />
           ))}
         </LinearGradient>

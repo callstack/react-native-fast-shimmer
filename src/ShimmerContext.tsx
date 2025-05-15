@@ -6,17 +6,19 @@ import {
 } from 'react';
 import {
   cancelAnimation,
-  Easing,
+  ReduceMotion,
   useSharedValue,
   withRepeat,
   withTiming,
   type SharedValue,
 } from 'react-native-reanimated';
+import type { GradientConfig } from './LinearGradient';
 
 interface ShimmerContextType {
   progress: SharedValue<number>;
   increaseActiveShimmers: () => void;
   decreaseActiveShimmers: () => void;
+  gradientConfig?: GradientConfig;
 }
 
 const ShimmerContext = createContext<ShimmerContextType | null>(null);
@@ -24,27 +26,30 @@ const ShimmerContext = createContext<ShimmerContextType | null>(null);
 interface ShimmerProviderProps {
   children?: React.ReactNode;
   duration?: number;
+  gradientConfig?: GradientConfig;
 }
 
 const ShimmerProvider: FunctionComponent<ShimmerProviderProps> = ({
   children,
   duration = 3000,
+  gradientConfig,
 }) => {
   const [activeShimmers, setActiveShimmers] = useState(0);
   const [isShimmerActive, setIsShimmerActive] = useState(false);
-  const progress = useSharedValue(-300);
+  const progress = useSharedValue(0);
 
   useEffect(() => {
     if (!isShimmerActive && activeShimmers > 0) {
       setIsShimmerActive(true);
-      progress.value = -300;
+      progress.value = 0;
       progress.value = withRepeat(
-        withTiming(300, {
+        withTiming(1, {
           duration: duration,
-          easing: Easing.ease,
         }),
         -1,
-        false
+        false,
+        undefined,
+        ReduceMotion.System
       );
     }
 
@@ -64,7 +69,12 @@ const ShimmerProvider: FunctionComponent<ShimmerProviderProps> = ({
 
   return (
     <ShimmerContext.Provider
-      value={{ progress, increaseActiveShimmers, decreaseActiveShimmers }}
+      value={{
+        progress,
+        gradientConfig,
+        increaseActiveShimmers,
+        decreaseActiveShimmers,
+      }}
     >
       {children}
     </ShimmerContext.Provider>
