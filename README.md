@@ -67,3 +67,4 @@ react-native-fast-shimmer is an open source project and will always remain free 
 [license-badge]: https://img.shields.io/npm/l/react-native-fast-shimmer?style=for-the-badge
 [license]: https://github.com/callstack/react-native-fast-shimmer/blob/main/LICENSE
 [npm-url]: https://npmjs.com/package/react-native-fast-shimmer
+[npm]: https://img.shields.io/npm/v/react-native-fast-shimmer?style=flat-square
