@@ -69,6 +69,7 @@ export const Shimmer = ({
       ((SCREEN_WIDTH + componentWidth) * easedProgress) / 1;
 
     return {
+      opacity: localProgress ? 1 : 0,
       transform: [
         {
           translateX: remappedRange,
