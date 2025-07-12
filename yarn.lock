@@ -12479,6 +12479,7 @@ __metadata:
   peerDependencies:
     react: "*"
     react-native: "*"
+    react-native-reanimated: ^3.17.5
   languageName: unknown
   linkType: soft
 
