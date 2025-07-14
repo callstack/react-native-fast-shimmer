@@ -1,3 +1,9 @@
+<a href="https://www.callstack.com/open-source?utm_campaign=generic&utm_source=github&utm_medium=referral&utm_content=fast-shimmer" align="center">
+  <picture>
+    <img alt="React Native Fast Shimmer" src="UPDATE_THIS:https://github.com/user-attachments/assets/5d7d2dd4-4561-431c-a70b-05a76896b8d4">
+  </picture>
+</a>
+
 [![mit licence][license-badge]][license]
 [![npm][npm]][npm-url]
 
@@ -12,7 +18,7 @@ Easy way to add shimmer placeholders that conform to parent component size and c
 This library requires [reanimated](https://docs.swmansion.com/react-native-reanimated/)
 
 ```sh
-npm install react-native-fast-shimmer
+npm install react-native-fast-shimmer react-native-reanimated
 ```
 
 ## Usage
