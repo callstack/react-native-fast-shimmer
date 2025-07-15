@@ -1,6 +1,6 @@
 <a href="https://www.callstack.com/open-source?utm_campaign=generic&utm_source=github&utm_medium=referral&utm_content=fast-shimmer" align="center">
   <picture>
-    <img alt="React Native Fast Shimmer" src="https://github.com/user-attachments/assets/d16135b6-0c5f-49a6-891a-fb005da2da32">
+    <img alt="React Native Fast Shimmer" src="https://github.com/user-attachments/assets/6535ab95-8c4a-4c91-a2ec-ccd463a02caf">
   </picture>
 </a>
 
