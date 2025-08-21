@@ -15,10 +15,10 @@ Easy way to add shimmer placeholders that conform to parent component size and c
 
 ## Getting Started
 
-This library requires [reanimated](https://docs.swmansion.com/react-native-reanimated/)
+This library requires [reanimated](https://docs.swmansion.com/react-native-reanimated/) and [react-native-svg](https://github.com/software-mansion/react-native-svg)
 
 ```sh
-npm install react-native-fast-shimmer react-native-reanimated
+npm install react-native-fast-shimmer react-native-reanimated react-native-svg
 ```
 
 ## Usage
