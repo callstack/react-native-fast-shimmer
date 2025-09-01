@@ -5,7 +5,6 @@ import {
   type ViewStyle,
   Dimensions,
   type LayoutChangeEvent,
-  Platform,
 } from 'react-native';
 import Animated, {
   Easing,
@@ -52,14 +51,9 @@ export const Shimmer = ({
   const measure = useCallback(
     (event: LayoutChangeEvent) => {
       if (componentWidth === 0) {
-        const measureInWindowFn =
-          Platform.OS === 'web'
-            ? event.nativeEvent.target.measureInWindow
-            : event.target.measureInWindow;
-        measureInWindowFn((x, _y, width) => {
-          setComponentWidth(width);
-          setOffset(x);
-        });
+        const { width, x } = event.nativeEvent.layout;
+        setComponentWidth(width);
+        setOffset(x);
       }
     },
     [componentWidth]
