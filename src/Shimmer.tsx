@@ -51,10 +51,9 @@ export const Shimmer = ({
   const measure = useCallback(
     (event: LayoutChangeEvent) => {
       if (componentWidth === 0) {
-        event.target.measureInWindow((x, _y, width) => {
-          setComponentWidth(width);
-          setOffset(x);
-        });
+        const { width, x } = event.nativeEvent.layout;
+        setComponentWidth(width);
+        setOffset(x);
       }
     },
     [componentWidth]
