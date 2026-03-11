@@ -45,7 +45,7 @@ export default function App() {
 | Prop              | Type                          | Default                                       | Description                                             |
 | ----------------- | ----------------------------- | --------------------------------------------- | ------------------------------------------------------- |
 | `style`           | `ViewStyle` or `ViewStyle[]`  | `undefined`                                   | Custom styles for the Shimmer container.                |
-| `linearGradients` | `string[]`                    | `['transparent', '#FFFFFF30', 'transparent']` | Array of colors for the linear gradient animation.      |
+| `linearGradients` | `string[]`                    | `['transparent', '#FFFFFFFF', 'transparent']` | Array of colors for the linear gradient animation.      |
 | `easing`          | `EasingFunction` (reanimated) | `Easing.linear`                               | Easing for shimmer time interpolation                   |
 | `speed`           | `number`                      | `1`                                           | Speed param for multiplying speed of individual shimmer |
 | `gradientStart`   | `{ x: number; y: number }`    | `{ x: 0, y: 0.5 }`                            | Start coordinates for the linear gradient.              |
